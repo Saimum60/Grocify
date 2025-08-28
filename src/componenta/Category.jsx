@@ -10,8 +10,8 @@ const Category = () => {
 
     const renderCard = category.map(card=>{
         return(
-            <div className="flex-1">
-                <div className="w-full min-h-[30vh] relative mb-10">
+            <div className="flex-1 basis-[300px]" key={card.id}>
+                <div className="w-full min-h-[30vh] relative mb-10  ">
                     <img src={card.image} className='absolute bottom-0' />
                 </div>
                 <div className="bg-zinc-100 pt-17 p-8 rounded-xl ">
@@ -28,7 +28,7 @@ const Category = () => {
             <div className="max-w-[1320px] mx-auto px-10 py-30">
                 <Heading hilight='Shop' text='by Category' />
 
-                <div className='flex gap-10 mt-15'>
+                <div className='flex flex-wrap gap-10 md:mt-15 '>
                     {renderCard}
                 </div>
             </div>
@@ -43,18 +43,18 @@ const category =[
         id:1,
         title:'Fruits & Veggies',
         description:'Fresh, organi produce source daily from local farm. Explor awide range of seasonal fruits and crisp vegetable',
-        image: Fruits
+        image: Fruits,
     },
     {
         id:2,
         title:'Meat & Seafood',
         description:'Fresh, organi produce source daily from local farm. Explor awide range of seasonal fruits and crisp vegetable',
-        image: Seafood
+        image: Seafood,
     },
     {
         id:3,
         title:'Dairy & Eggs',
         description:'Fresh, organi produce source daily from local farm. Explor awide range of seasonal fruits and crisp vegetable',
-        image: Dairy
-    }
+        image: Dairy,
+    },
 ]

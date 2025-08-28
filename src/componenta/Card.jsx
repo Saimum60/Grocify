@@ -1,17 +1,27 @@
 import React from 'react'
+import { FaHeart, FaPlus } from 'react-icons/fa'
 import Button from './Button'
 
-const Card = ({im}) => {
+const Card = () => {
   return (
-    
-        <div className='max-w-1320px mx-auto bg-amber-100'>
-            <img src={im} alt="" className='w-50' />
-            <h2>Fruits & Veggies</h2>
-            <p>Fresh, organi produce source daily from local farm</p>
-            <Button content='See all'/>
+    <div>
+        <div>
+            <span>
+                <FaHeart/>
+            </span>
+            <button>
+                <FaPlus/>
+            </button>
         </div>
-
-    
+        <div>
+            <img src="" alt="" />
+        </div>
+        <div>
+            <h3>titel</h3>
+            <p>3.00</p>
+            <Button content='Shop Now'/>
+        </div>
+    </div>
   )
 }
 
