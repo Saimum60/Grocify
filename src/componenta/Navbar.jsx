@@ -33,9 +33,9 @@ const Navbar = () => {
                 <Link to='/' className='text-3xl font-bold'>Gr<span className='text-orange-500'>O</span>cify</Link>
                 <ul className='md:flex gap-x-15 cursor-pointer hidden '>
                    <Link to='/' className='font-semibold tracking-wider text-zinc-800 hover:text-orange-500'>Home</Link>
-                   <Link to='/' className='font-semibold tracking-wider text-zinc-800 hover:text-orange-500'>About Us</Link>
+                   <Link to='/about' className='font-semibold tracking-wider text-zinc-800 hover:text-orange-500'>About Us</Link>
                    <Link to='/' className='font-semibold tracking-wider text-zinc-800 hover:text-orange-500'>Process</Link>
-                   <Link to='/' className='font-semibold tracking-wider text-zinc-800 hover:text-orange-500'>Contact us</Link>
+                   <Link to='/contact' className='font-semibold tracking-wider text-zinc-800 hover:text-orange-500'>Contact</Link>
                     
                 </ul>
                 <div className="flex items-center gap-x-5">
@@ -52,7 +52,7 @@ const Navbar = () => {
                     <Link to='/' className='font-semibold tracking-wider text-zinc-800 hover:text-orange-500'>Home</Link>
                    <Link to='/' className='font-semibold tracking-wider text-zinc-800 hover:text-orange-500'>About Us</Link>
                    <Link to='/' className='font-semibold tracking-wider text-zinc-800 hover:text-orange-500'>Process</Link>
-                   <Link to='/' className='font-semibold tracking-wider text-zinc-800 hover:text-orange-500'>Contact us</Link>
+                  <Link to='/contact' className='font-semibold tracking-wider text-zinc-800 hover:text-orange-500'>Contact</Link>
 
                       <li className="flex p-1 border-2 border-orange-500 rounded-full md:hidden">
                         <input type="text" name='text' id='text' placeholder='Search' autoComplete='off' className='flex-1 h-[5vh] px-3 focus:outline-none' />

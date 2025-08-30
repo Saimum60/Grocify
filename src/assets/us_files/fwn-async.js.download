@@ -1,0 +1,8 @@
+/*!
+ *   File: fwn-async.js
+ *   Release: v20250826.1
+ *   Commit: 19868d5f634ad426e79981f5489f578224361999
+ *   Stage: production
+ *   Date: 2025-08-28T17:57:04.496Z
+ *
+ */!function(){"use strict";const e=["fw_mode","fw_channel","fw_channel_id","fw_video","fw_video_id","fw_playlist","fw_playlist_id","fw_hashtag","fw_start_time","fw_loop","repeat","start_time"],t=document.currentScript;var n;n=()=>{const n=document.querySelectorAll("fw-embed-feed,fw-carousel,fw-grid,fw-player,fw-storyblock,fw-herounit,fw-storylink");let r="//asset.fwcdn3.com";t&&"src"in t&&(r=new URL(t.src).origin);const c=new IntersectionObserver((function(n){if(n[0]&&n[0].isIntersecting||(i=document.location.href).includes("fwplayer")||!e.every((e=>!i.includes(e)))){const e=document.createElement("script");e.src=`${r}/js/fwn.js`,e.async=!0,t&&t.getAttributeNames().filter((e=>e.startsWith("data-"))).forEach((n=>{e.setAttribute(n,t.getAttribute(n))})),document.head.appendChild(e),c.disconnect()}var i}));n.forEach((e=>c.observe(e)))},"loading"!==document.readyState?n():document.addEventListener("DOMContentLoaded",n)}();

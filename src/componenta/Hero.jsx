@@ -1,6 +1,7 @@
 import React from 'react'
 import Ban from '../assets/grocery.png'
 import Button from './Button'
+import { Link } from 'react-router-dom'
 
 const Hero = () => {
   return (
@@ -15,7 +16,7 @@ const Hero = () => {
                 <p className='text-zinc-600 md:text-lg text-md max-w-[530px] mt-5 mb-10'>
                     Bred for a high content of beneficial substance. Our products are all fresh and healthy
                 </p>
-                <Button content='Shop Now'/>
+                <Link to='/allproducts' className='bg-gradient-to-b from-orange-400 to-orange-500 text-white px-8 py-3 rounded-lg md:text-lg text-md hover:scal-105 hover:to-orange-600 transition-all duration-300 cursor-pointer'>Shop Now</Link>
 
 
             </div>
